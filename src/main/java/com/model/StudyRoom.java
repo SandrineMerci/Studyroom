@@ -11,15 +11,18 @@ public class StudyRoom {
     }
 
     public String getRoomCode() {
+
         return roomCode;
     }
 
     public int getCapacity() {
+
         return capacity;
     }
 
     @Override
     public String toString() {
+
         return roomCode + " | Capacity: " + capacity;
     }
 }

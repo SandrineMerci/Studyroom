@@ -12,10 +12,12 @@ public class RoomRepository {
     private List<StudyRoom> rooms = new ArrayList<>();
 
     public void save(StudyRoom room) {
+
         rooms.add(room);
     }
 
     public List<StudyRoom> findAll() {
+
         return rooms;
     }
 }

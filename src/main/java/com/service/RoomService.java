@@ -12,10 +12,12 @@ public class RoomService {
     private RoomRepository roomRepository;
 
     public void addRoom(String code, int capacity) {
+
         roomRepository.save(new StudyRoom(code, capacity));
     }
 
     public void displayRooms() {
+
         roomRepository.findAll().forEach(System.out::println);
     }
 }

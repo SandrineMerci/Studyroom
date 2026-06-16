@@ -12,10 +12,12 @@ public class StudentService {
     private StudentRepository studentRepository;
 
     public void addStudent(String id, String name) {
+
         studentRepository.save(new Student(id, name));
     }
 
     public void displayStudents() {
+
         studentRepository.findAll().forEach(System.out::println);
     }
 }
